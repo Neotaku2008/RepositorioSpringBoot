@@ -17,6 +17,7 @@ import org.springframework.context.annotation.ComponentScan;
 
 import com.javabydeveloper.mail.service.EmailSenderService;
 import com.javabydeveloper.model.Mail;
+import com.javabydeveloper.utils.Constantes;
 
 @SpringBootApplication
 @ComponentScan("com.javabydeveloper.mail.service")
@@ -35,8 +36,8 @@ public class SpringBootEmailTemplateApplication implements ApplicationRunner{
 	public void run(ApplicationArguments args) throws Exception {
 		
         Mail mail = new Mail();
-        mail.setFrom("from@gmail.com");//replace with your desired email
-        mail.setMailTo("to@gmail.com");//replace with your desired email
+        mail.setFrom("hugo.emata@gmail.com");//replace with your desired email
+        mail.setMailTo("hugo.emata@gmail.com");//replace with your desired email
         
         sendFakeNewsLetter(mail);
         sendInlinedCssEmail(mail);
