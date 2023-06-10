@@ -36,7 +36,7 @@ public class SpringBootEmailTemplateApplication implements ApplicationRunner{
 	public void run(ApplicationArguments args) throws Exception {
 		
         Mail mail = new Mail();
-        mail.setFrom("hugo.emata@gmail.com");//replace with your desired email
+        mail.setFrom("hugo.emata@gmail.com");  //replace with your desired email
         mail.setMailTo("hugo.emata@gmail.com");//replace with your desired email
         
         sendFakeNewsLetter(mail);
