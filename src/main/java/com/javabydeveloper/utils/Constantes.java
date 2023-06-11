@@ -13,7 +13,10 @@ public class Constantes {
 	public static final String EMAIL_TO	    = "hugo.emata@gmail.com";
 	//--
 	
-		
+	public static final String CSS_EMAIL_ADDRESS = "Company Inc, 3 Abbey Road, San Francisco CA 94102";
+	public static final String CSS_EMAIL_SIGN    = "JavaByDeveloper";
+	public static final String CSS_EMAIL_TYPE    = "TRANSACTIONAL";
+	
 	Constantes() {		
 	}
 	
