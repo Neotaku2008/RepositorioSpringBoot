@@ -36,8 +36,8 @@ public class SpringBootEmailTemplateApplication implements ApplicationRunner{
 	public void run(ApplicationArguments args) throws Exception {
 		
         Mail mail = new Mail();
-        mail.setFrom(Constantes.EMAIL_FROM);  //replace with your desired email
-        mail.setMailTo(Constantes.EMAIL_TO);//replace with your desired email
+        mail.setFrom("hugo.emata@gmail.com");  //replace with your desired email
+        mail.setMailTo("hugo.emata@gmail.com");//replace with your desired email
         
         sendFakeNewsLetter(mail);
         sendInlinedCssEmail(mail);
@@ -51,9 +51,9 @@ public class SpringBootEmailTemplateApplication implements ApplicationRunner{
 
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("name", "Developer!");
-        model.put("location", Constantes.NEWS_LETTER_LOCATION);
-        model.put("sign", Constantes.NEWS_LETTER_SIGN);
-        model.put("type", Constantes.NEWS_LETTER_TYPE);
+        model.put("location", "United States");
+        model.put("sign", "Java Developer");
+        model.put("type", "NEWSLETTER");
         mail.setProps(model);
 
         emailService.sendEmail(mail);
@@ -68,9 +68,9 @@ public class SpringBootEmailTemplateApplication implements ApplicationRunner{
 
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("name", "Peter Milanovich!");
-        model.put("address", Constantes.CSS_EMAIL_ADDRESS);
-        model.put("sign", Constantes.CSS_EMAIL_SIGN);
-        model.put("type", Constantes.CSS_EMAIL_TYPE);
+        model.put("address", "Company Inc, 3 Abbey Road, San Francisco CA 94102");
+        model.put("sign", "JavaByDeveloper");
+        model.put("type", "TRANSACTIONAL");
         mail.setProps(model);
 
         emailService.sendEmail(mail);
