@@ -51,9 +51,9 @@ public class SpringBootEmailTemplateApplication implements ApplicationRunner{
 
         Map<String, Object> model = new HashMap<String, Object>();
         model.put("name", "Developer!");
-        model.put("location", "United States");
-        model.put("sign", "Java Developer");
-        model.put("type", "NEWSLETTER");
+        model.put("location", Constantes.NEWS_LETTER_LOCATION);
+        model.put("sign", Constantes.NEWS_LETTER_SIGN);
+        model.put("type", Constantes.NEWS_LETTER_TYPE);
         mail.setProps(model);
 
         emailService.sendEmail(mail);
