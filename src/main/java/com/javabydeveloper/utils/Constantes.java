@@ -8,7 +8,12 @@ public class Constantes {
 	public static final String CODIGO_GENERAL_4	= "";
 	public static final String CODIGO_GENERAL_5	= "";
 	
+	//--
+	public static final String EMAIL_FROM	= "hugo.emata@gmail.com";
+	public static final String EMAIL_TO	    = "hugo.emata@gmail.com";
+	//--
 	
+		
 	Constantes() {		
 	}
 	
